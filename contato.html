@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Nordestino - Contato</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+    
+    #contato form {
+        background-color: #f8f8f8;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    #contato label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #e67e22;
+    }
+    #contato input, #contato textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: border-color 0.3s;
+        box-sizing: border-box; 
+    #contato input:focus, #contato textarea:focus {}
+        border-color: #e67e22; 
+        outline: none;
+    }
+    #contato button {
+        background-color: #d35400; 
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+        display: block;
+        width: 100%;
+    }
+    #contato button:hover {
+        background-color: #e67e22;
+        transform: translateY(-2px);
+    }
+</style>
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Restaurante Nordestino</h1>
+        <p>Entre em contato conosco</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="sobre.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <p>Envie-nos uma mensagem, sugestão ou faça uma reserva.</p>
+            
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+         <section id="localizacao">
+            <h2>Nossa Localização</h2>
+            <address>
+                Rua da Moeda, s/n - Bairro do Recife<br>
+                Recife, PE
+            </address>
+            
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.419089769888!2d-34.871927785223076!3d-8.058316294191316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a1a388b1f7%3A0xc3f173b9e4315257!2sRua%20da%20Moeda%2C%20Recife%20-%20PE%2C%2050030-380!5e0!3m2!1spt-BR!2sbr!4v1664121542385!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Restaurante Nordestino. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
